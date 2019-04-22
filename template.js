@@ -12,7 +12,7 @@
  * Constants
  * @const {Type} CONSTANT
  */
-let CONSTANT = null;
+const CONSTANT = null;
 
 /**
  * Variables
@@ -24,11 +24,11 @@ let variable = null;
 
 /**
  * @name Template_Class
- * Class description.
+ * @summary Class description.
  * 
  * @param {Type} param - Description
  * 
- * @description
+ * @description;
  * -    Event description.
  * -    Event description.
  */
@@ -46,11 +46,11 @@ class Template_Class {
 
 /**
  * @name Template_Function
- * Function description.
+ * @summary Function description.
  * 
  * @param {Type} param - Description
  * 
- * @description
+ * @description;
  * -    Event description.
  * -    Event description.
  */
