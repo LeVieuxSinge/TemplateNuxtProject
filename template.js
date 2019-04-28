@@ -1,5 +1,5 @@
 /**
- * Template javascript document.
+ * Template Javascript document.
  * Last Modified: March 22, 2019
  */
 
