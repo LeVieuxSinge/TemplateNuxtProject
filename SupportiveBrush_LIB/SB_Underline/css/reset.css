@@ -1,6 +1,6 @@
 /**
  * Reset CSS document.
- * Last Modified: April 27, 2019
+ * Last Modified: April 28, 2019
  */
 
 /* ============================================================= */
@@ -23,4 +23,24 @@ body {
 /* Hide scrollbar */
 ::-webkit-scrollbar {
     display: none;
+}
+
+/* ============================================================= */
+
+/* For the example */
+
+@media all and (max-width: 600px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+.test-layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

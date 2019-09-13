@@ -1,0 +1,29 @@
+SB_Loading v1.0 (April 2019)
+Designed by SupportiveBrush (Xavier Champoux)
+
+1. Add 'SB_Loading.css' or 'SB_Loading.scss' to your HTML.
+2. Add 'SB_Loading.js' to your HTML.
+3. Add the following code to your body:
+
+Example Code:
+
+    <div class="sb-loading">
+        <div class="sb-loading-text sb-loading-text-hidden">
+            <h1 class="sb-loading-time"></h1>
+        </div>
+        <div class="sb-loading-slide sb-loading-slide-1">
+            <h1 class="sb-loading-time"></h1>
+        </div>
+        <div class="sb-loading-slide sb-loading-slide-2">
+            <h1 class="sb-loading-time"></h1>
+        </div>
+        <div class="sb-loading-slide sb-loading-slide-3">
+            <h1 class="sb-loading-time"></h1>
+        </div>
+        <div class="sb-loading-slide sb-loading-slide-4">
+            <h1 class="sb-loading-time"></h1>
+        </div>
+    </div>
+
+4. If you wish to keep the font, copy paste it from 'reset.css'. *Open Sans Condensed from Google Fonts*
+5. Call SB_LoadingDone() once your desired elements all fully loaded.

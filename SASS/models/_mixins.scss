@@ -1,0 +1,68 @@
+/**
+ * Mixins SCSS document.
+ * Last Modified: September 12, 2019
+ */
+
+/* ============================================================= */
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@mixin respond-to($media) {
+
+  /* Extra small devices (phones, 600px and down) */
+  @if $media==xS {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @else if $media==S {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @else if $media==M {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @else if $media==L {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @else if $media==xL {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
