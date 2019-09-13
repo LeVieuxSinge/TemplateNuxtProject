@@ -1,0 +1,120 @@
+How to setup my website on a new computer -> Windows; Linux and Apple are not yet implemented.
+
+GITHUB:
+1. Install GITHUB DESKTOP.
+2. Connect to account.
+3. Clone website repository.
+
+TEXT EDITOR:
+1. Install VSCODE -Free- (Visual Studio Code) or any other text editor.
+2. Install the following extensions through VSCODE:
+
+    - Beautify, HookyQR
+    - JavaScript (ES6) Code Snippets, Charalampos Karypidis
+    - Live Server, Ritwick Dey
+    - VsCode-Icons, Roberto Huertas or VSCode Icons Team
+
+NODE.JS:
+2. Install Node.js -Free- -> a version of NPM is included.
+3. Open Node.js Command Prompt
+4. Set the /cd command to website folder -> cd C:\Path\To\Folder\Here
+5. Run these commands in this order:
+
+    - npm init // This will run through creating the package.json file
+    - npm install -g gulp // If you haven't installed gulp globally before
+    - npm install --save-dev gulp // Install Gulp
+    - npm install node-sass gulp-sass --save-dev // Install Gulp-Sass
+    - npm install materialize-css@next // Install Materialize
+    - npm install --save-dev gulp-browserify // Install Browserify
+    - npm install --save-dev gulp-minify // Install Minify
+
+6. (OPTIONAL) If it is a new project, setup folder in this order:
+
+    - index.html
+    --js
+        --lib
+            -*New Js File*
+        -main.js
+    --sass
+        -- components
+            -_*New SASS Component*.scss
+        -- layouts
+            -_*New SASS Layout*.scss
+        -- models
+            -_resets.scss
+        - main.scss
+    -- css
+    package.json
+    package-lock.json
+    gulpfile.js
+    README.md
+    Setup.txt
+
+7. In the Gulpfile.js, copy this code:
+
+    'use strict';
+
+    var gulp = require('gulp');
+    var sass = require('gulp-sass');
+    var browserify = require('gulp-browserify');
+    var minify = require('gulp-minify');
+    
+    sass.compiler = require('node-sass');
+    
+    // Compile CSS
+    gulp.task('sass', function () {
+      return gulp.src('./sass/main.scss')
+        .pipe(sass.sync({
+          outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(gulp.dest('build'));
+    });
+    
+    // Watch CSS
+    gulp.task('sass:watch', function () {
+      gulp.watch('sass/**/*.scss', gulp.series('sass'));
+    });
+    
+    // Compile JS
+    gulp.task('script', function () {
+      return gulp.src('js/main.js', {
+          read: false
+        })
+        .pipe(browserify())
+        .pipe(gulp.dest('build'))
+    });
+    
+    // Watch JS
+    gulp.task("script:watch", function () {
+      gulp.watch("js/includes/*.js", gulp.series("script")).on("change", function (event) {
+        console.log(`File ${event.path} has been ${event.type}`);
+      });
+    });
+    
+    // Minify JS
+    gulp.task('script:minify', function() {
+      return gulp.src(['build/main.js'])
+        .pipe(minify())
+        .pipe(gulp.dest('build'))
+    });
+
+8. Run a new task in Terminal -> Run Task... -> Test everyone
+9. "Continue without scanning the task output"
+10. A task terminal should appear at the bottom with these lines written:
+
+    [*TIME*] Starting *Name of the task*...
+    [*TIME*] Finished *Name of the task* after 42 ms
+
+11. If everything works fine, launch the ":watch" ones and start adding modifications to your CSS and JS files.
+13. When you're done run the "minify" task.
+12. Done.
+
+// ===	!IMPORTANT!  === //
+13. If when you open VSCODE there is a window saying 'GIT not found. Install git ...', add the directory to system's PATH.
+	Open Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables -> *Click On PATH* -> Edit -> New -> Paste this directory:
+	
+	C:\Users\USERNAME\AppData\Local\GitHubDesktop\app-2.1.3\resources\app\git\cmd (BY DEFAULT)
+
+// === OTHER REFERENCES === //
+http://ryanchristiani.com/getting-started-with-gulp-and-sass/
+https://materializecss.com/getting-started.html
