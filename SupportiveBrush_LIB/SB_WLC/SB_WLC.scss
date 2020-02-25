@@ -1,0 +1,93 @@
+/**
+ * Welcome Component SCSS document.
+ * Last Modified: January 27, 2020
+ */
+
+/* ============================================================= */
+
+/* Extra small devices (phones, 600px and down) */
+@include respond-to(xS) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@include respond-to(S) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@include respond-to(M) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@include respond-to(L) {
+
+    .wlc {
+        &-skip {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@include respond-to(xL) {}
+
+////////// NO MEDIA QUERIES /////////
+
+$font_color: #2c2c2c;
+$background_color: #f5f6f0;
+
+.wlc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 6969;
+    background-color: $background_color;
+    padding: 10%;
+
+    display: flex;
+    align-items: center;
+
+    color: $font_color;
+    font-family: $font_family_openSans;
+    font-weight: 300;
+
+    // Border
+    &-border {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        border-left: 1px solid $font_color;
+        @include transition(height 500ms);
+
+        display: flex;
+        align-items: center;
+    }
+
+    // Slide
+    &-slide {
+        display: none;
+
+        // Visible
+        &-visible {
+            position: relative;
+            margin: 20px;
+            font-size: 2.5em;
+            opacity: 0;
+            @include transform(translateX(-100%));
+            @include transition(opacity 500ms, transform 1000ms cubic-bezier(.79,0,.56,1.03));
+
+            // Active
+            &-active {
+                opacity: 1;
+                @include transform(translateX(0));
+                @include transition(opacity 500ms, transform 1000ms);
+            }
+        }
+    }
+
+    // Skip
+    &-skip {
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+}

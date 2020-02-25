@@ -1,0 +1,71 @@
+How to setup my website on a new computer -> Windows; Linux and Apple are not yet implemented.
+
+GITHUB:
+1. Install GITHUB DESKTOP.
+2. Connect to account.
+3. Clone website repository.
+
+TEXT EDITOR:
+1. Install VSCODE -Free- (Visual Studio Code) or any other text editor.
+2. Install the following extensions through VSCODE:
+
+	- Beautify, HookyQR
+	- Vetur, Pine Wu
+	- JavaScript (ES6) Code Snippets, Charalampos Karypidis
+	- VsCode-Icons, Roberto Huertas or VSCode Icons Team
+
+NODE.JS:
+2. Install Node.js -Free- -> a version of NPM is included.
+3. Open Node.js Command Prompt
+4. Set the /cd command to website folder -> cd C:\Path\To\Folder\Here
+5. Run these commands in this order:
+
+	- npx create-nuxt-app <project-name>
+		https://fr.nuxtjs.org/guide/installation
+	- npm install --save-dev node-sass sass-loader
+		https://fr.nuxtjs.org/api/configuration-css/#la-propri-t-css
+		https://fr.nuxtjs.org/faq/pre-processors/#comment-utiliser-des-pr-processeurs-
+	- npm install cross-env --save-dev
+	- npm install push-dir --save-dev
+		https://fr.nuxtjs.org/faq/github-pages/
+
+6. Add this code to nuxt.config.js :
+
+	/* nuxt.config.js */
+	const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+		  router: {
+ 		   base: '/<Github-Repository>/'
+ 		 }
+	} : {}
+
+	export default {
+	  ...routerBase
+	}
+
+7. Add this line to package.json:
+
+	"scripts": {
+  		"dev": "nuxt",
+  		"build": "nuxt build",
+  		"start": "nuxt start",
+  		"build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    		"generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+    		"deploy:gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup"
+	},
+	
+8. Run a new task in Terminal -> Run Task... (Or use a command prompt with /cd to folder)
+
+	- npm run dev (For Development)
+	- npm build (For Production)
+	- npm start (For Production)
+	- npm run generate (For Static Page -> Github Pages)
+	- npm run deploy (For Static Page -> Github Pages)
+
+9. "Continue without scanning the task output"
+10. Done.
+
+// ===	!IMPORTANT!  === //
+11. If when you open VSCODE there is a window saying 'GIT not found. Install git ...', add the directory to system's PATH.
+	Open Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables -> *Click On PATH* -> Edit -> New -> Paste this directory:
+	
+	C:\Users\USERNAME\AppData\Local\GitHubDesktop\app-2.1.3\resources\app\git\cmd (BY DEFAULT)
