@@ -1,0 +1,177 @@
+/**
+ * Reset SCSS document.
+ * Last Modified: September 29, 2019
+ */
+
+/* ============================================================= */
+
+/* VARIABLES
+========================================================================== */
+
+// Z-Index
+$belt-index: 169;
+$belt-pop-index: -69;
+
+// Colors
+$color1: #f5f6f0;
+$color2: #2c2c2c;
+$color3: #df542a;
+$color4: #f5c432;
+$color5: #b8d137;
+$color6: #00b2bd;
+$color7: #0066a4;
+$color8: #d22a63;
+
+// Fonts
+$font_family_inria: 'Inria Serif',
+serif !important;
+$font_family_sen: 'Sen',
+sans-serif !important;
+
+// Breakpoints
+$bp-small : 24em;
+$bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+$bp-med : 46.8em;
+$bp-med-2 : 48em;
+$bp-large : 50em;
+$bp-large-2 : 54.5em;
+$bp-xl : 60em;
+$bp-xl-2 : 67em;
+
+@mixin respond-to($breakpoint) {
+
+  @media all and (max-width: $bp-small) {
+    body {
+      font-size: 12px;
+    }
+  }
+
+  // Small
+  @if $breakpoint==S {
+    @media all and (min-width: $bp-small) {
+      body {
+        font-size: 12px;
+      }
+
+      @content;
+    }
+  }
+
+  // Small Landscape
+  @else if $breakpoint==SL {
+    @media all and (orientation: landscape) and (min-width: $bp-small) {
+      body {
+        font-size: 12px;
+      }
+
+      @content;
+    }
+  }
+
+  // Medium
+  @else if $breakpoint==M {
+    @media all and (min-width: $bp-med) {
+      body {
+        font-size: 14px;
+      }
+
+      @content;
+    }
+  }
+
+  // Medium Landscape
+  @else if $breakpoint==ML {
+    @media all and (orientation: landscape) and (min-width: $bp-med) {
+      body {
+        font-size: 14px;
+      }
+
+      @content;
+    }
+  }
+
+  // Large
+  @else if $breakpoint==L {
+    @media all and (min-width: $bp-large) {
+      body {
+        font-size: 15px;
+      }
+
+      @content;
+    }
+  }
+
+  // Large Landscape
+  @else if $breakpoint==LL {
+    @media all and (orientation: landscape) and (min-width: $bp-large) {
+      body {
+        font-size: 15px;
+      }
+
+      @content;
+    }
+  }
+
+  // xLarge
+  @else if $breakpoint==xL {
+    @media all and (min-width: $bp-xl) {
+      body {
+        font-size: 16px;
+      }
+
+      @content;
+    }
+  }
+
+  // xLarge Landscape
+  @else if $breakpoint==xLL {
+    @media all and (orientation: landscape) and (min-width: $bp-xl) {
+      body {
+        font-size: 18px;
+      }
+
+      @content;
+    }
+  }
+
+  // Hover Option
+  @else if $breakpoint==H {
+    @media (hover: hover) {
+      @content;
+    }
+  }
+
+}
+
+// Mixins
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin animation($property) {
+  -webkit-animation: $property;
+  -moz-animation: $property;
+  -o-animation: $property;
+  animation: $property;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($property, $property1: null) {
+  -webkit-transition: $property, $property1;
+  -moz-transition: $property, $property1;
+  -o-transition: $property, $property1;
+  transition: $property, $property1;
+}
