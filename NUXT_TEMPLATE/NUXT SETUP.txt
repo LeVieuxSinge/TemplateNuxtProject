@@ -1,0 +1,78 @@
+
+	May 22, 2020;
+
+	////////// HOW TO SETUP NUXT //////////
+
+	SETUP NUXT WEBSITE ON WINDOWS AND LINUX.
+	*THIS SETUP TAKES IN CONSIDERATION THAT YOU HAVE 
+	A GIT GUI, VISUAL STUDIO CODE AND NODEJS WITH NPM*
+
+	////////// HOW TO SETUP NUXT (NEW PROJECT) //////////
+
+	-- Open a terminal
+	-- Set the /cd command to website folder -> cd /Path/To/Folder/Here
+	-- Run these commands:
+
+		// npx create-nuxt-app <project-name> (https://fr.nuxtjs.org/guide/installation)
+		// npm install --save-dev node-sass sass-loader (https://fr.nuxtjs.org/api/configuration-css/#la-propri-t-css) (https://fr.nuxtjs.org/faq/pre-processors/#comment-utiliser-des-pr-processeurs-)
+		// npm install cross-env --save-dev
+		// npm install push-dir --save-dev https://fr.nuxtjs.org/faq/github-pages/
+
+	-- Clone this repository https://github.com/LeVieuxSinge/templates
+	-- In NUXT_TEMPLATE, copy and paste eveything to the corresponding directory in your new project
+	-- Edit nuxt.config.js to fit your project
+	-- Edit package.json:
+
+		"scripts": {
+			"dev": "nuxt",
+			"build": "nuxt build",
+			"start": "nuxt start",
+			"build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+			"generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+			"deploy:gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup"
+		},
+
+	-- Run a new task in Terminal -> Run Task... (Or use a command prompt with /cd to folder)
+
+		// npm run dev (For Development)
+		// npm build (For Production)
+		// npm start (For Production)
+		// npm run generate (For Static Page -> Github Pages)
+		// npm run deploy (For Static Page -> Github Pages)
+
+	-- "Continue without scanning the task output"
+	-- If everything works, you are done. Enjoy !
+
+	////////// HOW TO SETUP NUXT (EXISTING PROJECT) //////////
+
+	-- Clone repository.
+	-- Run a new task in Terminal -> Run Task:
+
+		// npm install (Installs all dependencies found in package-lock.json)
+		
+	-- Run a new task in Terminal -> Run Task... (Or use a command prompt with /cd to folder)
+
+		// npm run dev (For Development)
+		// npm build (For Production)
+		// npm start (For Production)
+		// npm run generate (For Static Page -> Github Pages)
+		// npm run deploy (For Static Page -> Github Pages)
+
+	-- "Continue without scanning the task output"
+	-- If everything works, you are done. Enjoy !
+
+	////////// POSSIBLE ISSUES //////////
+
+	-- If when you try to run npm install you get : "install function not found" or any similar issue, run this command in your project's terminal:
+
+		// npm install --save nuxt
+
+	-- If when you try to run npm dev you get "ENOSPC: System limit for number of file watchers reached", run this command in your project's terminal:
+
+		// echo fs.inotify.max_user_watches=524288 (WINDOWS)
+		// sudo tee -a /etc/sysctl.conf && sudo sysctl -p (LINUX)
+
+	-- (WINDOWS) If when you open VSCODE there is a window saying 'GIT not found. Install git ...', add the directory to system's PATH.
+	Open Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables -> *Click On PATH* -> Edit -> New -> Paste this directory:
+	
+		// C:\Users\USERNAME\AppData\Local\GitHubDesktop\app-2.1.3\resources\app\git\cmd (BY DEFAULT)
