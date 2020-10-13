@@ -28,7 +28,13 @@ _Description Here_
 
 - Tool Name -> [Tool Homepage](link)
 
-:metal: Huge thanks to all the developpers behind these amazing tools. :metal:
+:metal: Huge thanks to all the developers behind these amazing tools. :metal:
+
+---
+
+## References
+
+- [Reference Name](link)
 
 ---
 
