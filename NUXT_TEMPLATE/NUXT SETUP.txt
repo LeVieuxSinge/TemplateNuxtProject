@@ -17,6 +17,7 @@
 		// npm install --save-dev node-sass sass-loader (https://fr.nuxtjs.org/api/configuration-css/#la-propri-t-css) (https://fr.nuxtjs.org/faq/pre-processors/#comment-utiliser-des-pr-processeurs-)
 		// npm install cross-env --save-dev
 		// npm install push-dir --save-dev https://fr.nuxtjs.org/faq/github-pages/
+		// npm install --save-dev @nuxtjs/vuetify https://github.com/nuxt-community/vuetify-module
 
 	-- Clone this repository https://github.com/LeVieuxSinge/templates
 	-- In NUXT_TEMPLATE, copy and paste eveything to the corresponding directory in your new project

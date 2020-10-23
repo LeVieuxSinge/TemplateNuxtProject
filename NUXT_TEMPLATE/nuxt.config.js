@@ -43,7 +43,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/sass/reset.scss'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
@@ -51,7 +51,13 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/vuetify',
+
+    // With options
+    //['@nuxtjs/vuetify', { /* module options */ }]
+  ],
   /*
    ** Nuxt.js modules
    */
