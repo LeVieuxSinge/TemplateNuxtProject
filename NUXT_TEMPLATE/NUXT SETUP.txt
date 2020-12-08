@@ -18,6 +18,8 @@
 		// npm install cross-env --save-dev
 		// npm install push-dir --save-dev https://fr.nuxtjs.org/faq/github-pages/
 
+		// npm install --save vue-animejs (https://dev.to/mtpiercey/nuxt-meet-anime-5805)
+
 	-- Clone this repository https://github.com/LeVieuxSinge/templates
 	-- In NUXT_TEMPLATE, copy and paste eveything to the corresponding directory in your new project
 	-- Edit nuxt.config.js to fit your project
