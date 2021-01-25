@@ -8,7 +8,7 @@
 1. [Prerequisite](#prerequesite)
 2. [Getting Ready](#getting-ready)
 3. [Create Repository](#create-repository)
-4. [Setup Nuxt.js App (Vue.js)](#setup-nuxt.js-app-(vue.js)) 
+4. [Setup Nuxt.js App (Vue.js)](#setup-nuxtjs-app-vuejs) 
 5. [Deploy on Github Pages](#deploy-on-github-pages) 
 6. [Optional Node Modules](#optional-node-modules) 
 7. [Important Nuxt Commands](#important-nuxt-commands)
