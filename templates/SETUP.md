@@ -1,4 +1,4 @@
-![Template Image](/templates/image_template.png)
+![Template Image](./templates/image_template.png)
 
 # Setup a _<new project\>_...
 
@@ -76,10 +76,10 @@
 
 	```js
 	"scripts": {
-	"dev": "nuxt",
-	"generate": "nuxt generate",
-	"start": "nuxt start",
-	"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+		"dev": "nuxt",
+		"generate": "nuxt generate",
+		"start": "nuxt start",
+		"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
 	},
 	```
 
@@ -99,7 +99,7 @@
 	npm install --save-dev sass sass-loader
 	```
 
-### Animejs - [What is Anime.js?](https://animejs.com/) [How to use Anime.js with Nuxt.js?](https://fr.nuxtjs.org/faq/pre-processors/)
+### Animejs - [What is Anime.js?](https://animejs.com/) [How to use Anime.js with Nuxt.js?](https://github.com/ivodolenc/nuxt-animejs)
 - [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
 
 	```bash
@@ -174,7 +174,7 @@
 
 - If when you open **Visual Studio Code** there is a window saying 'GIT not found. Install git ...', add the directory to system's PATH.
 
-	- [ ] Open Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables -> *Click On PATH* -> Edit -> New -> Paste this directory:
+	- Open Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables -> *Click On PATH* -> Edit -> New -> Paste this directory:
 
 	```text
 	C:\Users\USERNAME\AppData\Local\GitHubDesktop\app-VERSION\resources\app\git\cmd
