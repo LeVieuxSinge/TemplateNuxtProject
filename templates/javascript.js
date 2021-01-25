@@ -1,11 +1,12 @@
 /**
- * Template Javascript document.
- * Last Modified: March 22, 2019
+ * @name Javascript.js
+ * @version 1.0
+ * @author FirstName LastName / https://www.website.com/ /
+ * @description Template javascript file.
+ * @updated January 24th, 2021.
+ * @license MIT
  */
 
-/**
- * Required
- */
 "use strict";
 
 /**

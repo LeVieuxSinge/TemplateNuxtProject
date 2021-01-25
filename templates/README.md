@@ -1,10 +1,8 @@
-[Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-_Image Here_
+![Template Image](/templates/image_template.png)
 
 # Project Name
 
-> Build version **_1.0a_**
+> Build version **_1.0_**
 
 > Last update December 31, 1999;
 
@@ -40,15 +38,6 @@ _Description Here_
 
 ## Team
 
-**Member Name**
-_Member Jobs_
-[Member Social](link)
+**Member Name** — _Member Jobs_ | :point-right: [Website](link) : [Instagram](link) :point-left:
 
 > :postbox: **Contact Us** through our social medias.
-
----
-
-## License
-
-- Free
-- © ????? 2020
