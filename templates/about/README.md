@@ -1,4 +1,4 @@
-![Template Image](./templates/assets/image_template.png)
+![Template Image](../assets/image_template.png)
 
 # Project Name
 
