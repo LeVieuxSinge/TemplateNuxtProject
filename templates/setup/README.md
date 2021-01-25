@@ -1,4 +1,4 @@
-![Template Image](/templates/image_template.png)
+![Template Image](./templates/assets/image_template.png)
 
 # Setup a _<new project\>_...
 
