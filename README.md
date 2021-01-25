@@ -106,11 +106,26 @@
 	npm install --save-dev nuxt-animejs
 	```
 
-- [ ] Add nuxt-animejs to the buildModules section of Edit **nuxt.config.js** to include animejs as a build module:
+- [ ] Add nuxt-animejs to the buildModules section of **nuxt.config.js** :
 
 	```js
 	export default {
 		buildModules: ['nuxt-animejs']
+	}
+	```
+
+### Vuetify - [What is Vuetify?](https://vuetifyjs.com/en/) [How to use Vuetify with Nuxt.js?](https://vuetifyjs.com/en/introduction/why-vuetify/)
+- [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
+
+	```bash
+	npm install --save-dev @nuxtjs/vuetify
+	```
+
+- [ ] Add nuxt-vuetify to the buildModules section of **nuxt.config.js** :
+
+	```js
+	export default {
+		buildModules: ['@nuxtjs/vuetify']
 	}
 	```
 
