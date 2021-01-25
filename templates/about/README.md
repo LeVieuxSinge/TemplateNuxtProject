@@ -38,6 +38,6 @@ _Description Here_
 
 ## Team
 
-**Member Name** — _Member Jobs_ | :point_right: [Website](link) : [Instagram](link) :point_left:
+**Member Name** — _Member Jobs_ | [Website](link) : [Instagram](link)
 
 > :postbox: **Contact Us** through our social medias.
