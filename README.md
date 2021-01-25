@@ -1,3 +1,5 @@
+![Template Image](/templates/image_template.png)
+
 # Setup a _<new project\>_...
 
 > Last update January 24, 2021;
