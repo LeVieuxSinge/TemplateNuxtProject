@@ -38,7 +38,7 @@
 
 ## Create repository
 
-- [ ] On Github.com Click on **Use this template** to create a new repository.
+- [ ] On [this repository](https://github.com/LeVieuxSinge/TemplateProject) Click on **Use this template** to create a new repository.
 - [ ] Fill in the information and click on **Create repository from template**.
 
 ## Setup Nuxt.js App (Vue.js)
