@@ -60,7 +60,7 @@
 
 - [ ] Follow the **instructions**. [Click me for more information.](https://github.com/nuxt/create-nuxt-app)
 - [ ] Once done, find the newly created folder in your repository **files**. (Generally under **/Documents/Github/**)
-- [ ] **Transfer** everything from the new foler inside your repository root folder.
+- [ ] **Transfer** everything from the new folder inside your repository root folder.
 
 ## Deploy on Github Pages
 
