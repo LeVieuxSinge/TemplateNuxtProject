@@ -6,13 +6,23 @@
 
 > Last update December 31, 1999;
 
+## Summary
+
 _Description Here_
 
-## Recent Updates
+## Guide
+1. [Changelogs](#changelogs)
+2. [To Do](#to-do)
+3. **Fill in here**
+7. [Tools](#tools)
+9. [Members](#members)
+8. [References](#references)
 
->**This project is still in early development and will only be made public friendly once done, thanks.**
+## Changelogs
 
-## Roadmap
+>**This project is still in early development. Updates will be posted once in production phase, thanks.**
+
+## To Do
 
 - [ ] Tasks.
 
@@ -30,14 +40,14 @@ _Description Here_
 
 ---
 
-## References
-
-- [Reference Name](link)
-
----
-
-## Team
+## Members
 
 **Member Name** — _Member Jobs_ | [Website](link) : [Instagram](link)
 
 > :postbox: **Contact Us** through our social medias.
+
+---
+
+## References
+
+- [Reference Name](link)

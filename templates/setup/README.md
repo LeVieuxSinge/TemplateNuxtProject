@@ -13,7 +13,7 @@
 6. [Optional Node Modules](#optional-node-modules) 
 7. [Important Nuxt Commands](#important-nuxt-commands)
 8. [Possible Issues](#possible-issues)
-9. [Other](#other)
+9. [References](#references)
 
 ## Prerequesite
 
@@ -64,13 +64,11 @@
 
 ## Deploy on Github Pages
 
-- [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
+- [ ] Run this command in a new **terminal** (Terminal > New Terminal) to install the [push-dir](https://github.com/L33T-KR3W/push-dir) module :
 
 	```bash
 	npm install --save-dev push-dir
 	```
-
-	[Push-Dir Documentation](https://github.com/L33T-KR3W/push-dir)
 
 - [ ] Edit the **package.json** file and add a deploy command :
 
@@ -83,6 +81,20 @@
 	},
 	```
 
+- [ ] Edit the **nuxt.config.js** file to make sure these settings are properly set :
+
+	```js
+	export default {
+		// Target: https://go.nuxtjs.dev/config-target
+ 		target: 'static',
+  
+  		// For Static deployment
+  		router: { 
+    		base: '/<project-name>/',
+  		},
+	}
+	```
+
 - [ ] To deploy on Github Pages, simply execute :
 
 	```bash
@@ -93,24 +105,76 @@
 ## Optional Node Modules
 
 ### Sass - [What is Sass?](https://sass-lang.com/) [How to use Sass with Nuxt.js?](https://fr.nuxtjs.org/faq/pre-processors/)
+
 - [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
 
 	```bash
 	npm install --save-dev sass sass-loader
 	```
 
+### Style Ressources - [What is Style Ressources?](https://github.com/nuxt-community/style-resources-module#readme) [How to use Style Ressources with Nuxt.js?](https://github.com/nuxt-community/style-resources-module#readme)
+
+- [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
+
+	```bash
+	npm install --save-dev @nuxtjs/style-resources
+	```
+
+- [ ] Add nuxt-style-ressources to the modules section of **nuxt.config.js** :
+
+	```js
+	export default {
+		modules: ['@nuxtjs/style-resources']
+	}
+	```
+
+- [ ] Add your style sheets in the custom module's section of **nuxt.config.js** :
+
+	```js
+	export default {
+		// Style-Ressources module configuration (https://github.com/nuxt-community/style-resources-module#readme)
+		styleResources: {
+			// Your settings here
+   			sass: [],
+   			scss: [],
+   			less: [],
+  			stylus: []
+
+			// Example (to delete)
+    		scss: [ '~/assets/scss/variables.scss',]
+		}
+	}
+	```
+
 ### Animejs - [What is Anime.js?](https://animejs.com/) [How to use Anime.js with Nuxt.js?](https://github.com/ivodolenc/nuxt-animejs)
+
 - [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
 
 	```bash
 	npm install --save-dev nuxt-animejs
 	```
 
-- [ ] Add nuxt-animejs to the buildModules section of Edit **nuxt.config.js** to include animejs as a build module:
+- [ ] Add nuxt-animejs to the buildModules section of **nuxt.config.js** :
 
 	```js
 	export default {
 		buildModules: ['nuxt-animejs']
+	}
+	```
+
+### Vuetify - [What is Vuetify?](https://vuetifyjs.com/en/) [How to use Vuetify with Nuxt.js?](https://vuetifyjs.com/en/introduction/why-vuetify/)
+
+- [ ] Run this command in a new **terminal** (Terminal > New Terminal) :
+
+	```bash
+	npm install --save-dev @nuxtjs/vuetify
+	```
+
+- [ ] Add nuxt-vuetify to the buildModules section of **nuxt.config.js** :
+
+	```js
+	export default {
+		buildModules: ['@nuxtjs/vuetify']
 	}
 	```
 
@@ -182,8 +246,6 @@
 
 ---
 
-## Other
+## References
 
 [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-:metal: Huge thanks to all the developers behind these amazing tools. :metal:
