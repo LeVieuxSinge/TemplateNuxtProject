@@ -2,7 +2,7 @@
 name: Assign tasks
 about: List of things to do.
 title: "[TODO]"
-labels: task
+labels: ''
 assignees: ''
 
 ---
