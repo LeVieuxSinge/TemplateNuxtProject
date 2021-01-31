@@ -1,8 +1,8 @@
-![Template Image](templates/assets/image_template.png)
+![Template Image](template/assets/image_template.png)
 
 # Template Nuxt.js (Vue.js) Project
 
-> Last update January 26, 2021;
+> Last update January 31, 2021;
 
 ## Summary
 
@@ -15,7 +15,7 @@ Follow the [instructions](/templates/setup/README.md).
 ## Includes
 
 - [Installation Guide](/templates/setup/README.md)
-- [Template About](/templates/about/README.md)
+- [Template Homepage](/templates/homepage/README.md)
 - [Template Javascript File](/templates/javascript/template.js)
 - [Template SCSS Variables File](/templates/scss/variables.scss)
 

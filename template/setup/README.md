@@ -2,7 +2,7 @@
 
 # Setup a _<new project\>_...
 
-> Last update January 24, 2021;
+> Last update January 31, 2021;
 
 ## Guide
 1. [Prerequisite](#prerequesite)
