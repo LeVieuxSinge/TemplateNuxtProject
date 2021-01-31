@@ -11,12 +11,10 @@
 _Description Here_
 
 ## Guide
-1. [Changelogs](#changelogs)
-2. [To Do](#to-do)
-3. **Fill in here**
-7. [Tools](#tools)
-9. [Members](#members)
-8. [References](#references)
+1. **Fill in here**
+2. [Tools](#tools)
+3. [Members](#members)
+4. [References](#references)
 
 ## Changelogs
 
