@@ -10,14 +10,14 @@ _This repository is a template for any Nuxt.js projects. It will guide you in th
 
 ## To Begin ...
 
-Follow the [instructions](/templates/setup/README.md).
+Follow the [instructions](/template/setup/README.md).
 
 ## Includes
 
-- [Installation Guide](/templates/setup/README.md)
-- [Template Homepage](/templates/homepage/README.md)
-- [Template Javascript File](/templates/javascript/template.js)
-- [Template SCSS Variables File](/templates/scss/variables.scss)
+- [Installation Guide](/template/setup/README.md)
+- [Template Homepage](/template/homepage/README.md)
+- [Template Javascript File](/template/javascript/template.js)
+- [Template SCSS Variables File](/template/scss/variables.scss)
 
 ---
 
