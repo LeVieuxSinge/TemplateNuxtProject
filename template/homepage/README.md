@@ -16,14 +16,6 @@ _Description Here_
 3. [Members](#members)
 4. [References](#references)
 
-## Changelogs
-
->**This project is still in early development. Updates will be posted once in production phase, thanks.**
-
-## To Do
-
-- [ ] Tasks.
-
 ---
 
 ## Setup / Download / Installation / Process / More...
