@@ -25,7 +25,7 @@
 
 ## Getting Ready
 
-> **This section is for users who don't have the prequesite. Please skip ahead if you do.**
+> **This section is for users who don't have the prerequesite. Please skip ahead if you do.**
 
 - [ ] Install [Git](https://git-scm.com/)
 - [ ] Install a Git GUI
